@@ -65,11 +65,12 @@ const Cart = () => {
   const total = subtotal + deliveryFee;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background font-montserrat">
       <Header />
       
-      <main className="container-main py-6 sm:py-8 md:py-12 px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+      <main className="container-main pt-12 sm:pt-16 md:pt-20 pb-16 sm:pb-20 md:pb-24 px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-20">
+
           {/* Left Column - Shopping Bag */}
           <div className="lg:col-span-2">
             <h1 className="text-xl sm:text-2xl font-semibold text-foreground mb-4 sm:mb-6 md:mb-8">Shopping Bag</h1>

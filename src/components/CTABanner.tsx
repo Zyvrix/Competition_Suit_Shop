@@ -3,7 +3,7 @@ import suitGreen from "@/assets/suit-green.png";
 
 const CTABanner = () => {
   return (
-    <section className="container-main py-6 sm:py-8 md:py-10 px-4">
+    <section className="container-main py-6 sm:py-8 md:py-10 px-4 font-montserrat">
       <div className="bg-pink-light rounded-2xl sm:rounded-3xl overflow-hidden relative">
         <div className="flex flex-col md:flex-row items-center">
           

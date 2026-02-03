@@ -278,3 +278,8 @@
   box-shadow: 0 0 0 4px rgba(232, 28, 255, 0.15);
   transform: scale(1.03);
 }
+
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}

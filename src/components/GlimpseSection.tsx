@@ -18,7 +18,7 @@ const GlimpseSection = () => {
 </p>
 
       {/* Main Heading - 2 lines */}
-      <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-3xl max-w-4xl mx-auto px-4 font-bold leading-tight">
+      <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-3xl max-w-4xl mx-auto px-4 font-bold leading-tight font-montserrat">
         Behind every custom suit lies a story of grit,
         <br />
         transformation, and unshakable determination

@@ -1,5 +1,11 @@
 import { Instagram, Youtube, Mail, Phone, ChevronLeft, ChevronRight } from "lucide-react";
 import logo from "@/assets/logo.png";
+import visa from "@/assets/visa.svg";
+import mastercard from "@/assets/mastercard.svg";
+import amex from "@/assets/amex.svg";
+import discover from "@/assets/discover.svg";
+import paypal from "@/assets/paypal.svg";
+
 
 const companyLinks = [
   "Home", "Blogs", "About Us", "Best Time to Order", "Reviews & Testimonials"
@@ -31,7 +37,7 @@ const helpLinks3 = [
 
 const Footer = () => {
   return (
-    <footer className="bg-background border-t border-border pt-8 sm:pt-12 md:pt-16 pb-6 sm:pb-8">
+    <footer className="bg-background border-t border-border pt-8 sm:pt-12 md:pt-16 pb-6 sm:pb-8 font-montserrat">
       <div className="container-main px-4">
         {/* Main Footer Content */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-12 gap-6 sm:gap-8 mb-8 sm:mb-12">
@@ -149,23 +155,27 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 sm:pt-6 border-t border-border">
-          {/* Copyright */}
-          <p className="text-xs sm:text-sm text-muted-foreground order-3 sm:order-1">
-            © 2025 Competition Suit Shop
-          </p>
+        <div className="border-t border-border mt-8 pt-4">
+  <div className="flex items-center justify-between gap-4 flex-wrap">
+    
+    {/* Copyright - RIGHT */}
+    <p className="text-xs text-muted-foreground whitespace-nowrap">
+      © 2025 Competition Suit Shop
+    </p>
+    
+    {/* Payment Icons - LEFT */}
+    <div className="flex items-center gap-3">
+      <img src={visa} alt="Visa" className="h-5 object-contain" />
+      <img src={mastercard} alt="Mastercard" className="h-5 object-contain" />
+      <img src={amex} alt="American Express" className="h-5 object-contain" />
+      <img src={discover} alt="Discover" className="h-5 object-contain" />
+      <img src={paypal} alt="PayPal" className="h-5 object-contain" />
+    </div>
 
-          
+    
 
-          {/* Payment Icons */}
-          <div className="flex items-center gap-2 sm:gap-4 order-2 sm:order-3 flex-wrap justify-center">
-            <span className="text-xs sm:text-sm font-bold text-foreground">VISA</span>
-            <span className="text-xs sm:text-sm font-bold text-foreground">mastercard</span>
-            <span className="text-xs sm:text-sm font-bold text-foreground">AMEX</span>
-            <span className="text-xs sm:text-sm font-bold text-foreground hidden sm:inline">discover</span>
-            <span className="text-xs sm:text-sm font-bold text-foreground">PayPal</span>
-          </div>
-        </div>
+  </div>
+</div>
       </div>
     </footer>
   );

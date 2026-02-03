@@ -22,7 +22,7 @@ const SpotlightSection = () => {
         `,
       }}
     >
-      <div className="container-main px-4 relative z-10">
+      <div className="container-main px-4 relative z-10 font-montserrat">
         {/* Heading */}
         <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-center">
           We're opening the spotlight to you,
